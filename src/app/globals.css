@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --evening-primary: #6366f1;
+  --evening-primary-dark: #4f46e5;
+  --evening-bg: #f8fafc;
+  --evening-card: #ffffff;
+  --evening-text: #1e293b;
+  --evening-text-light: #64748b;
+  --evening-border: #e2e8f0;
+  --evening-success: #22c55e;
+  --evening-danger: #ef4444;
+  --evening-warning: #f59e0b;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--evening-bg);
+  color: var(--evening-text);
+}
+
+/* SVG Seat styles */
+.seat {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.seat:hover {
+  filter: brightness(0.9);
+  transform: scale(1.05);
+  transform-origin: center;
+}
+
+.seat-free {
+  fill: #22c55e;
+  stroke: #16a34a;
+  stroke-width: 2;
+}
+
+.seat-reserved {
+  fill: #ef4444;
+  stroke: #dc2626;
+  stroke-width: 2;
+}
+
+.seat-mine {
+  fill: #6366f1;
+  stroke: #4f46e5;
+  stroke-width: 2;
+}
+
+.seat-label {
+  font-size: 11px;
+  font-weight: 600;
+  fill: white;
+  pointer-events: none;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
